@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="AuctionModel">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../AuctionModel/out/artifacts/AuctionModel_jar/AuctionModel.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

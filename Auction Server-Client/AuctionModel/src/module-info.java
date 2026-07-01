@@ -1,0 +1,3 @@
+module AuctionModel {
+    exports model;
+}

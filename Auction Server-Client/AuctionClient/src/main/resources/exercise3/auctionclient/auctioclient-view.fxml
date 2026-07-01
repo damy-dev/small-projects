@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="800.0" prefWidth="400.0" spacing="20.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="exercise3.auctionclient.AuctionClientController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <Label fx:id="welcomeText" text="SECURE AUCTION HOUSE">
+      <font>
+         <Font size="19.0" />
+      </font></Label>
+   <TitledPane animated="false" collapsible="false" text="Login  Settings">
+     <content>
+       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+            <children>
+               <VBox alignment="TOP_CENTER" prefHeight="182.0" prefWidth="360.0">
+                  <children>
+                     <HBox alignment="TOP_CENTER" prefHeight="20.0" prefWidth="360.0">
+                        <children>
+                           <Label prefHeight="17.0" prefWidth="52.0" text="Server IP" textFill="#1717b9">
+                              <HBox.margin>
+                                 <Insets left="35.0" right="35.0" top="10.0" />
+                              </HBox.margin>
+                           </Label>
+                           <Label text="Port" textFill="#1717b9">
+                              <HBox.margin>
+                                 <Insets left="35.0" right="35.0" top="10.0" />
+                              </HBox.margin>
+                           </Label>
+                           <Label text="User Name" textFill="#1717b9">
+                              <HBox.margin>
+                                 <Insets left="35.0" right="35.0" top="10.0" />
+                              </HBox.margin>
+                           </Label>
+                        </children>
+                     </HBox>
+                     <HBox alignment="TOP_CENTER" prefHeight="118.0" prefWidth="360.0">
+                        <children>
+                           <TextField fx:id="tfServerIP" editable="false">
+                              <HBox.margin>
+                                 <Insets left="10.0" right="10.0" />
+                              </HBox.margin>
+                           </TextField>
+                           <TextField fx:id="tfPort" editable="false">
+                              <HBox.margin>
+                                 <Insets left="10.0" right="10.0" />
+                              </HBox.margin>
+                           </TextField>
+                           <TextField fx:id="tfUserName">
+                              <HBox.margin>
+                                 <Insets left="10.0" right="10.0" />
+                              </HBox.margin>
+                           </TextField>
+                        </children>
+                     </HBox>
+                     <Button fx:id="btConnect" mnemonicParsing="false" onAction="#ConnectToServer" text="Connect Securely (SSL)" />
+                  </children>
+               </VBox>
+            </children>
+         </AnchorPane>
+     </content>
+   </TitledPane>
+   <Pane prefHeight="265.0" prefWidth="360.0" style="-fx-border-color: Gray;">
+      <children>
+         <VBox alignment="TOP_CENTER" layoutX="59.0" layoutY="5.0" prefHeight="136.0" prefWidth="200.0">
+            <children>
+               <ImageView fx:id="ivItemExpose" fitHeight="153.0" fitWidth="243.0" pickOnBounds="true" preserveRatio="true">
+                  <VBox.margin>
+                     <Insets top="20.0" />
+                  </VBox.margin>
+               </ImageView>
+               <Label fx:id="lbItemName" textFill="#3b5fff">
+                  <font>
+                     <Font size="27.0" />
+                  </font>
+                  <VBox.margin>
+                     <Insets top="10.0" />
+                  </VBox.margin>
+               </Label>
+               <Label fx:id="lbItemDescription">
+                  <VBox.margin>
+                     <Insets top="10.0" />
+                  </VBox.margin>
+               </Label>
+            </children>
+         </VBox>
+      </children>
+   </Pane>
+   <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
+      <children>
+         <HBox alignment="CENTER">
+            <children>
+               <VBox alignment="CENTER" prefWidth="150.0">
+                  <children>
+                     <Label text="Current Pirce" />
+                     <Label fx:id="lbCurrentPrice" textFill="#20b24c">
+                        <font>
+                           <Font name="System Bold" size="28.0" />
+                        </font>
+                     </Label>
+                  </children>
+               </VBox>
+               <VBox alignment="CENTER" prefWidth="150.0">
+                  <children>
+                     <Label text="Time Left" />
+                     <Label fx:id="lbTimeLeft">
+                        <font>
+                           <Font size="28.0" />
+                        </font>
+                     </Label>
+                  </children>
+               </VBox>
+            </children>
+         </HBox>
+         <Label fx:id="lbLead" />
+         <HBox alignment="CENTER" prefHeight="49.0" prefWidth="360.0">
+            <children>
+               <TextField fx:id="tfPlaceBid">
+                  <HBox.margin>
+                     <Insets right="10.0" />
+                  </HBox.margin>
+               </TextField>
+               <Button fx:id="btPlaceBid" mnemonicParsing="false" onAction="#btMakeBid" text="PLACE BID">
+                  <HBox.margin>
+                     <Insets right="10.0" />
+                  </HBox.margin>
+               </Button>
+            </children>
+         </HBox>
+      </children>
+   </VBox>
+</VBox>
