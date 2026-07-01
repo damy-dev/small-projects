@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Notes PMDM</string>
+    <string name="txt_opAddNote">Añadir nota</string>
+    <string name="txt_opDeleteNote">Eliminar nota</string>
+    <string name="txt_opSortAZ">Ordenar por título (A-Z)</string>
+    <string name="txt_opSortZA">Ordenar por título (Z-A)</string>
+    <string name="txt_opEditNote">Editar nota</string>
+    <string name="txt_opSaveNote">Guardar nota</string>
+    <string name="txt_titleNote">Título nota</string>
+    <string name="txt_descriptionNote">Descripción nota</string>
+    <string name="txt_errorTitle">El Título no puede estar vacío</string>
+    <string name="txt_undo">Deshacer</string>
+    <string name="txt_noteDeleted">Eliminada la nota "%1$s"</string>
+    <string name="txt_noNotes">No hay notas que mostrar</string>
+    <string name="txt_modeDark">Modo oscuro</string>
+</resources>
